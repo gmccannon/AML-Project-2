@@ -12,6 +12,8 @@ def count_last_column(file_path, value):
         for row in reader:
             if int(row[-1]) == value:
                 count += 1
+            if int(row[-1]) == 1:
+                print(row)
     return count
 
 # Count occurrences of values 1 and 2 in the last column
